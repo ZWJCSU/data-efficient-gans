@@ -197,7 +197,7 @@ def create_dataset(dataset, resolution=None):
         return create_from_lmdb(data_dir, resolution)
     
     if dataset in predefined_datasets:
-        unzip_from_url(data_dir, 'https://github.com/ZWJCSU/data-efficient-gans/tree/master/imgs/{}.zip'.format(dataset))
+        unzip_from_url(data_dir, 'https://raw.githubusercontent.com/ZWJCSU/data-efficient-gans/master/imgs/{}.zip'.format(dataset))
     return create_from_images(data_dir, resolution)
 
 
