@@ -149,6 +149,7 @@ def create_from_images(data_dir, resolution=None, tfrecord_dir=None, shuffle=Tru
         tfrecord_dir = data_dir
     print('Loading images from "%s"' % data_dir)
     image_filenames = sorted(glob.glob(os.path.join(data_dir, '*')))
+    print(image_filenames)
     image_filenames = [fname for fname in image_filenames if fname.split('.')[-1].lower() in ['jpg', 'jpeg', 'png', 'bmp']]
     if len(image_filenames) == 0:
         error('No input images found')
@@ -182,6 +183,7 @@ def create_from_images(data_dir, resolution=None, tfrecord_dir=None, shuffle=Tru
 def create_dataset(dataset, resolution=None):
     if dataset in predefined_datasets:
         data_dir = 'datasets/{}'.format(dataset)
+        print(data_dir)
         try:
             os.makedirs(data_dir)
         except:
