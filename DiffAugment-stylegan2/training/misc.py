@@ -21,7 +21,8 @@ import dnnlib
 def open_file_or_url(file_or_url):
     file_or_url = get_path_or_url(file_or_url)
     if dnnlib.util.is_url(file_or_url):
-        return dnnlib.util.open_url(file_or_url, cache_dir='.stylegan2-cache')
+     #   return dnnlib.util.open_url(file_or_url, cache_dir='.stylegan2-cache')
+         return dnnlib.util.open_url('https://doc-08-a8-docs.googleusercontent.com/docs/securesc/rr9bfdvu2l847so4vbk84hrqht35n1id/ec7lv6n4i05kpf3oibf5hfqsjbskf3mb/1602726825000/16505208945295710773/16505208945295710773/139s71auCq90U2GQ_G9PWqk2oWHmKI0FM?e=download&authuser=0&nonce=qd4gli34r22dm&user=16505208945295710773&hash=abkc02ri9jqgv71snhhnlst1i4frji7f')
     return open(file_or_url, 'rb')
 
 
