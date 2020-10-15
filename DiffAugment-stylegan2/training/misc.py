@@ -21,8 +21,7 @@ import dnnlib
 def open_file_or_url(file_or_url):
     file_or_url = get_path_or_url(file_or_url)
     if dnnlib.util.is_url(file_or_url):
-     #   return dnnlib.util.open_url(file_or_url, cache_dir='.stylegan2-cache')
-         return dnnlib.util.open_url('https://drive.google.com/file/d/139s71auCq90U2GQ_G9PWqk2oWHmKI0FM/view?usp=sharing')
+       return dnnlib.util.open_url(file_or_url, cache_dir='.stylegan2-cache')
     return open(file_or_url, 'rb')
 
 
