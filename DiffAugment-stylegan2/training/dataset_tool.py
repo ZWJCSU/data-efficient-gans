@@ -181,6 +181,7 @@ def create_from_images(data_dir, resolution=None, tfrecord_dir=None, shuffle=Tru
 
 
 def create_dataset(dataset, resolution=None):
+    print(dataset)
     if dataset in predefined_datasets:
         data_dir = 'datasets/{}'.format(dataset)
         print(data_dir)
