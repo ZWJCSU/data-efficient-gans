@@ -213,6 +213,7 @@ predefined_datasets = [
     '100-shot-temple_of_heaven',
     '100-shot-wuzhen',
     '100-shot-JackMa',
+    '100-shot-JackMa3'
     'AnimalFace-cat',
     'AnimalFace-dog',
 ]
